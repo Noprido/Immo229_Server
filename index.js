@@ -11,7 +11,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://immo229.000webhostapp.com/",
+    origin: "https://immo229.000webhostapp.com",
     methods: ["GET", "POST"],
   },
 });
@@ -175,5 +175,5 @@ io.on("connection", function(socket){
 
 
 server.listen(5000, () => {
-  console.log("New SERVER IS RUNNING on 5000");
+  console.log("SERVER IS RUNNING on 5000");
 });
